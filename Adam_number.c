@@ -1,26 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int n,q,sum=0,sn1,sn2,r,rsn2;
+    int n,q,r,s=0,sn1,sn2,rsn2;
     scanf("%d",&n);
     sn1=n*n;
     q=n;
     while(q>0)
     {
         r=q%10;
-        sum=sum*10+r;
+        s=s*10+r;
         q=q/10;
     }
-    sn2=sum*sum;
+    sn2=s*s;
     q=sn2;
-    sum=0;
+    s=0;
     while(q>0)
     {
         r=q%10;
-        sum=sum*10+r;
+        s=s*10+r;
         q=q/10;
     }
-    rsn2=sum;
+    rsn2=s;
     if(sn1==rsn2)
     printf("True");
     else
