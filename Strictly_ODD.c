@@ -3,22 +3,26 @@ int main()
 {
     int n,i;
     scanf("%d",&n);
-    int a[n];
-    for(i=0;i<n;i++)
+    int a[n]; 
+    int strictly_odd=1;
+    for(i=0;i<n;i++) 
     {
         scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(a[n]%2!=0)
+        if(a[i]%2!=0)
         {
-            printf("True");
-            break;
-        }
-        else
-        {
-            printf("False");
-            break;
+            if(i%2!=1) 
+            {
+                strictly_odd=0;
+                break;
+            }
         }
     }
+    if(strictly_odd==1)
+    printf("True");
+    else
+    printf("False");
+
 }
