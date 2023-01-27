@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     for(i=i;i<=n;i++)
     {
-        if(i%2==0)
+        if(i%2==0) 
         {
             a=pow(2,p1);
             printf("%d ",a);
@@ -16,7 +16,8 @@ int main()
         {
             b=pow(3,p2);
             printf("%d ",b);
-            p2++;
+        p2++;
         }
     }
+    
 }
